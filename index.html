@@ -2511,7 +2511,7 @@ kbd {
         <div class="audit-log-container" id="auditLogList"></div>
       </div>
 
-      <!-- BILLING -->
+            <!-- BILLING -->
       <div id="billing" class="page page-content hidden">
         <div class="workspace-header">
           <div>
@@ -2520,6 +2520,7 @@ kbd {
           </div>
         </div>
 
+        <!-- Current Subscription -->
         <div class="billing-info">
           <h3>Current Subscription</h3>
           <div class="billing-row">
@@ -2541,17 +2542,19 @@ kbd {
           <div class="billing-row">
             <span class="billing-row-label">Payment Method</span>
             <span class="billing-row-value" id="billingPayment">None</span>
-              <div style="margin-top:16px;text-align:right;">
-    <button onclick="upgradePlan('pro')" class="btn-warning btn-sm">Upgrade to Pro</button>
-  </div>
-</div>
+          </div>
+          <!-- Big upgrade button under the rows -->
+          <div style="margin-top:16px;text-align:right;">
+            <button onclick="upgradePlan('pro')" class="btn-warning btn-sm">Upgrade to Pro</button>
           </div>
         </div>
 
+        <!-- Plans -->
         <h3 style="margin-bottom:18px;">Choose a Plan</h3>
         <div class="billing-plans" id="billingPlans"></div>
 
-        <div class="billing-info">
+        <!-- Invoice History -->
+        <div class="billing-info" style="margin-top:24px;">
           <h3>Invoice History</h3>
           <table class="invoice-table">
             <thead>
